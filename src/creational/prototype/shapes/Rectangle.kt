@@ -5,6 +5,8 @@ class Rectangle(target:Rectangle?) : Shape(target) {
     private var width:Int=0
     private var height:Int=0
 
+    constructor(){}
+
     init {
         target?.let {
             this.height = target.height

@@ -11,7 +11,7 @@ object Demo {
         val shapes = mutableListOf<Shape>()
         val shapesCopy = mutableListOf<Shape>()
 
-        val circle = Circle(null)
+        val circle = Circle()
         circle.x = 10
         circle.y = 20
         circle.radius = 20
@@ -20,7 +20,7 @@ object Demo {
         shapes.add(circle)
         shapes.add(circle.clone())
 
-        val rectangle = Rectangle(null)
+        val rectangle = Rectangle()
         rectangle.x = 10
         rectangle.y = 20
         rectangle.color = "green"
