@@ -4,6 +4,10 @@ import creational.prototype.shapes.Circle
 import creational.prototype.shapes.Rectangle
 import creational.prototype.shapes.Shape
 
+/**
+ * Prototype pattern: Clone class
+ * https://refactoring.guru/design-patterns/prototype
+ */
 object Demo {
 
     @JvmStatic
