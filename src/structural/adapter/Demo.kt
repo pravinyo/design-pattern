@@ -5,6 +5,12 @@ import structural.adapter.round.RoundHole
 import structural.adapter.round.RoundPeg
 import structural.adapter.square.SquarePeg
 
+/**
+ * Adapter is a structural design pattern that allows objects
+ * with incompatible interfaces to collaborate.
+ *
+ * https://refactoring.guru/design-patterns/adapter
+ */
 object Demo {
     @JvmStatic
     fun main(args: Array<String>) {
