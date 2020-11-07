@@ -2,10 +2,10 @@ package creational.prototype.shapes
 
 class Rectangle(target:Rectangle?) : Shape(target) {
 
-    private var width:Int=0
-    private var height:Int=0
+    var width:Int=0
+    var height:Int=0
 
-    constructor(){}
+    constructor() : this(null)
 
     init {
         target?.let {

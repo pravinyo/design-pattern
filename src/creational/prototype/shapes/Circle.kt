@@ -4,7 +4,7 @@ class Circle (target:Circle?) : Shape(target){
 
     var radius:Int = 0
 
-    constructor(){ }
+    constructor() : this(null)
 
     init {
         target?.let {
