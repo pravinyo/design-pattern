@@ -4,6 +4,13 @@ import structural.proxy.downloader.YoutubeDownloader
 import structural.proxy.proxy.YoutubeCacheProxy
 import structural.proxy.third_party_library.ThirdPartyYoutubeLibImpl
 
+/**
+ * Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object.
+ * A proxy controls access to the original object, allowing you to perform something either before or after
+ * the request gets through to the original object.
+ *
+ * URL: https://refactoring.guru/design-patterns/proxy
+ */
 object Demo {
     @JvmStatic
     fun main(args: Array<String>) {
