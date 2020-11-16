@@ -8,6 +8,12 @@ import behavioral.iterator.spammer.SocialSpammer
 import java.util.*
 
 
+/**
+ * Iterator is a behavioral design pattern that lets you traverse elements of a collection
+ * without exposing its underlying representation (list, stack, tree, etc.).
+ *
+ * URL: https://refactoring.guru/design-patterns/iterator
+ */
 object Demo {
     private fun createTestProfiles():List<Profile>{
         val data: MutableList<Profile> = ArrayList()
