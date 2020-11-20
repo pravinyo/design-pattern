@@ -18,21 +18,18 @@ class UI(private val player: Player) {
         context.add(textField)
         context.add(buttons)
 
-        // EN: Context delegates handling user's input to a state object.
+        // Context delegates handling user's input to a state object.
         // Naturally, the outcome will depend on what state is currently active,
         // since all states can handle the input differently.
-        //
-        // RU: Контекст заставляет состояние реагировать на пользовательский
-        // ввод вместо себя. Реакция может быть разной в зависимости от того,
-        // какое состояние сейчас активно.
+
         val play = JButton("Play")
-        play.addActionListener { e: ActionEvent? -> textField.text = player!!.getState().onPlay() }
+        play.addActionListener { textField.text = player.getState().onPlay() }
         val stop = JButton("Stop")
-        stop.addActionListener { e: ActionEvent? -> textField.text = player!!.getState().onLock() }
+        stop.addActionListener { textField.text = player.getState().onLock() }
         val next = JButton("Next")
-        next.addActionListener { e: ActionEvent? -> textField.text = player!!.getState().onNext() }
+        next.addActionListener { textField.text = player.getState().onNext() }
         val prev = JButton("Prev")
-        prev.addActionListener { e: ActionEvent? -> textField.text = player!!.getState().onPrevious() }
+        prev.addActionListener { textField.text = player.getState().onPrevious() }
         frame.isVisible = true
         frame.setSize(300, 100)
         buttons.add(play)
