@@ -9,7 +9,12 @@ import java.io.IOException
 import java.io.InputStreamReader
 import java.util.*
 
-
+/**
+ * Strategy is a behavioral design pattern that lets you define a family of algorithms,
+ * put each of them into a separate class, and make their objects interchangeable.
+ *
+ * URL: https://refactoring.guru/design-patterns/strategy
+ */
 object Demo {
     private val priceOnProducts: MutableMap<Int, Int> = HashMap()
     private val reader = BufferedReader(InputStreamReader(System.`in`))
