@@ -6,7 +6,13 @@ import behavioral.template_method.networks.Twitter
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
-
+/**
+ * Template Method is a behavioral design pattern that defines the skeleton of an algorithm
+ * in the superclass but lets subclasses override specific steps of the algorithm without
+ * changing its structure.
+ *
+ * URL: https://refactoring.guru/design-patterns/template-method
+ */
 object Demo {
     @JvmStatic
     fun main(args: Array<String>) {
